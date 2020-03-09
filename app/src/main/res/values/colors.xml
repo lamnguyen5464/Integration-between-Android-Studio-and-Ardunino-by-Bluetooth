@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bgmenu">#437799</color>
+    <color name="btmenu">#575757</color>
+    <color name="btoutline">#dedede</color>
+    <color name="btunenable">#aeafb0</color>
+    <color name="shadow">#3b3b3b</color>
+    <color name="btc">#b7b7b7</color>
+    <color name="btdc">#5e5e5e</color>
+
+</resources>

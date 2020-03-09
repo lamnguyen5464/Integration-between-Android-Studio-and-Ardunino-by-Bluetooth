@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="400dp" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="We're TiLaDu team!"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/bgmenu"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:padding="25dp"
+        android:textColor="#545454"
+        android:layout_marginTop="60dp"
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:maxLines="20"
+        android:text=
+            "*Đây là phần mềm dùng để kết nối với mạch arduino của thiết bị đo gia tốc nhằm phát và nhận số liệu.
+\n\n\n
+*Thông tin thành viên:\n
+-Lập trình phần mềm: Trường Lâm\n
+  [mail: lamnguyen5464@gmail.com]\n\n
+-Thiết kế và nối mạch: Cao Triết\n
+  [mail: trietnguyenpham@gmail.com]\n\n
+-Phụ trách dựng khung: Khánh Dung\n
+  [mail: khanhdungg2001@gmail.com]"
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLOSE"
+        android:id="@+id/cl"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:background="@android:color/transparent"
+        android:textColor="@color/bgmenu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

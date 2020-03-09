@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".counter4">
+
+    <TextView
+        android:id="@+id/scale"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/second"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/space"
+        android:layout_marginTop="100dp"
+        android:text="00"
+        android:textSize="40sp" />
+    <TextView
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text=":"
+        android:layout_toLeftOf="@id/second"
+        android:layout_alignTop="@id/minute"/>
+    <TextView
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/scale1"
+        android:textSize="40sp"
+        android:text="00"
+        android:layout_alignTop="@+id/minute"/>
+    <TextView
+        android:id="@+id/space2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text=":"
+        android:layout_toRightOf="@+id/second"
+        android:layout_alignTop="@id/minute"/>
+    <TextView
+        android:id="@+id/milisec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="00"
+        android:layout_toRightOf="@+id/space2"
+        android:layout_alignTop="@+id/minute"/>
+
+    <TextView
+        android:id="@+id/scale1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toLeftOf="@+id/scale"
+        android:layout_marginRight="150dp"
+        android:layout_below="@+id/second"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignRight="@id/milisec"
+        android:layout_marginRight="25dp"
+        android:layout_alignTop="@id/scale"
+        android:background="@drawable/custom_button_upload"
+        android:text="RESET"
+        android:textColor="@color/shadow"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Count how long the gate1 is interupted\nCount how long the gate2 is interupted"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/second"
+        android:layout_alignLeft="@+id/minute"
+        android:text="Counting" />
+
+    <TextView
+        android:id="@+id/minute_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/space_"
+        android:layout_marginTop="100dp"
+        android:text="00"
+        android:textSize="40sp" />
+    <TextView
+        android:id="@+id/space_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text=":"
+        android:layout_toLeftOf="@id/second_"
+        android:layout_alignTop="@id/minute_"/>
+    <TextView
+        android:id="@+id/second_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/scale2"
+        android:textSize="40sp"
+        android:text="00"
+        android:layout_alignTop="@+id/minute_"/>
+    <TextView
+        android:id="@+id/space2_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text=":"
+        android:layout_toRightOf="@+id/second_"
+        android:layout_alignTop="@id/minute_"/>
+    <TextView
+        android:id="@+id/milisec_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="00"
+        android:layout_toRightOf="@+id/space2_"
+        android:layout_alignTop="@+id/minute_"/>
+
+    <TextView
+        android:id="@+id/scale2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@+id/scale"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/second_"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/reset_"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignRight="@id/milisec_"
+        android:layout_marginRight="25dp"
+        android:layout_alignTop="@id/scale"
+        android:background="@drawable/custom_button_upload"
+        android:text="RESET"
+        android:textColor="@color/shadow"
+        android:textSize="15sp" />
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/second_"
+        android:layout_alignLeft="@+id/minute_"
+        android:text="Counting" />
+</RelativeLayout>

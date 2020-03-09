@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Counter1">
+
+
+    <TextView
+        android:id="@+id/minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/space"
+        android:layout_marginTop="174dp"
+        android:text="00"
+        android:textSize="60sp" />
+    <TextView
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:text=":"
+        android:layout_toLeftOf="@id/second"
+        android:layout_alignTop="@id/minute"/>
+    <TextView
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="60sp"
+        android:text="00"
+        android:layout_alignTop="@+id/minute"/>
+    <TextView
+        android:id="@+id/space2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:text=":"
+        android:layout_toRightOf="@+id/second"
+        android:layout_alignTop="@id/minute"/>
+    <TextView
+        android:id="@+id/milisec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:text="00"
+        android:layout_toRightOf="@+id/space2"
+        android:layout_alignTop="@+id/minute"/>
+    <TextView
+        android:id="@+id/scale"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/second"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/start"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_button_upload"
+        android:layout_alignTop="@+id/scale"
+        android:layout_toLeftOf="@+id/scale"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/shadow"
+        android:textSize="15sp"
+        android:text="START" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_button_upload"
+        android:layout_alignTop="@+id/scale"
+        android:layout_toRightOf="@+id/scale"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/shadow"
+        android:textSize="15sp"
+        android:text="RESET" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Click START to begin\nInterrupt the connection of gate1 to end"/>
+</RelativeLayout>
